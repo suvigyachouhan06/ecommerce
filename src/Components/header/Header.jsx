@@ -44,10 +44,10 @@ const Header = () => {
                     {/* header search end here  */}
 
                     <div className="user-icon d-flex align-items-center ms-auto">
-                      <Button className='me-3'><FaRegUser/></Button>
+                      <Button className='circle me-3'><FaRegUser/></Button>
                       <div className='ms-auto cartTab'>
                         <span className='price'>Rs 120</span>
-                        <Button className='ms-2'><FaCartShopping/></Button>
+                        <Button className='circle ms-2'><FaCartShopping/></Button>
                       </div>
                     </div>
                 </div>

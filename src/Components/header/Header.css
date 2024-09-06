@@ -84,7 +84,7 @@
     font-size: 25px;
 
   }
-  .header .user-icon{
+  .header .user-icon .circle{
     align-items: center;
     justify-content: center;
     min-width: 40px;
@@ -94,7 +94,7 @@
     border: 1px solid rgba(0,0,0,0.2);
     color: #000;
   }
-  .header .user-icon svg{
+  .header .user-icon .circle svg{
     font-size: 20px;
     color: rgba(0,0,0,0.7);
   }
