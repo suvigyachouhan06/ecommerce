@@ -1,6 +1,14 @@
 .bg-blue{
     background:#233a95;
   }
+  @media (min-width:1300px) {
+    .container, .container-lg, .container-md, .container-sm,.container-xl{
+        max-width: 1200px;
+    }
+  }
+  .container{
+    max-width: 90%;
+  }
   .headerWrapper .top-strip{
   padding: 8px 0px;
   }
@@ -25,65 +33,10 @@
     justify-content: flex-start;
     color: #000;
     border: 1px solid rgba(0,0,0,0.2);
-    border-radius: 7px;
+    border-radius: 5px;
     padding: 10px 15px;
   }
-  /* .header .part2 .countryDrop .info{
-    width: 120px;
-    min-width: auto;
-  } */
 
-  .header .part2 .countryDrop span.ms-auto svg{
-    opacity: 0.7;
-  }
-.header .part2 .countryDrop .location{
-    font-size: 12px !important;
-    text-transform: capitalize !important;
-    color: rgba(0,0,0,0.7);
-    line-height: 16px;
-  }
-  .header .part2 .countryDrop .name{
-    font-size: 14px !important;
-    text-transform: capitalize !important;
-    color: #233a95;
-    font-weight: 700;
-    line-height: 16px;
-  }
-
-  .header .headerSearch{
-    width: 60%;
-    height: 50px;
-    background: #f3f4f7;
-    padding: 10px;
-    position: relative;
-    border-radius: 9px;
-    border: 1px solid rgba(0,0,0,0.1);
-  }
-  .header .headerSearch input{
-    background: transparent;
-    outline: none;
-    font-size: 16px;
-    color: rgba(0,0,0,0.8);
-    width: 100%;
-    height: 25px;
-    border: 0px;
-    padding: 0px 20px;
-  }
-  .header .headerSearch Button{
-    position: absolute;
-    top: 4px;
-    right: 15px;
-    z-index: 100;
-    min-width: 40px;
-    height: 40px;
-    width: 40px;
-    border-radius:50% ;
-    color: #000;
-  }
-  .header .headerSearch Button svg{
-    font-size: 25px;
-
-  }
   .header .user-icon .circle{
     align-items: center;
     justify-content: center;
@@ -98,3 +51,30 @@
     font-size: 20px;
     color: rgba(0,0,0,0.7);
   }
+  .cartTab Button{
+    background: #fff1ee;
+  }
+  .cartTab Button svg{
+    color: #ea2b0f !important;
+  }
+  .cartTab .price{
+      font-size: 18px;
+      color: rgba(0,0,0,0.8);
+      width: 60px;
+      min-width: 60px;
+      font-weight: 700 !important;
+  }
+  .cartTab .count{
+    position: absolute;
+    top: -6px;
+    right: -4px;
+    height: 20px; 
+    width: 20px;
+    border-radius: 50%;
+    background: #ea2b0f;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+
+  }
+

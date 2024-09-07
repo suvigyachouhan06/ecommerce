@@ -1,0 +1,16 @@
+.countryDrop span.ms-auto svg{
+    opacity: 0.7;
+  }
+.countryDrop .location{
+    font-size: 12px !important;
+    text-transform: capitalize !important;
+    color: rgba(0,0,0,0.7);
+    line-height: 16px;
+  }
+.countryDrop .name{
+    font-size: 14px !important;
+    text-transform: capitalize !important;
+    color: #233a95;
+    font-weight: 700;
+    line-height: 16px;
+  }
