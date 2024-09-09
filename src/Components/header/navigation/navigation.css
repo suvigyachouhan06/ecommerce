@@ -26,8 +26,11 @@ nav .allCatTab{
     margin-bottom: 0px;
   }
   nav .navPart2 ul li a{
+    text-decoration: none;
+  }
+  nav .navPart2 ul li a button{
     font-family: "Dosis", sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 600;
     text-decoration: none;
     color: rgba(0,0,0,0.8);
@@ -37,7 +40,7 @@ nav .allCatTab{
     transition: all 0.2s ease-in-out;
     border-radius: 25px;
   }
-  nav .navPart2 ul li a:hover{
+  nav .navPart2 ul li a button:hover{
     background: #f0faff;
     color: #2bbef9;
   }

@@ -28,13 +28,13 @@ const Navigation = () => {
 
       <div className="col-sm-10 navPart2 d-flex align-items-center ">
         <ul className="list list-inline ms-alto">
-            <li className="list-inline-item"><Link to="/"><IoHomeOutline/> &nbsp;HOME</Link></li>
-            <li className="list-inline-item"><Link to="/"><GiClothes/>FASHION</Link></li>
-            <li className="list-inline-item"><Link to="/"><FaMobileAlt/>ELECTRONICS</Link></li>
-            <li className="list-inline-item"><Link to="/"><GiCakeSlice/>BAKERY</Link></li>
-            <li className="list-inline-item"><Link to="/"><MdOutlineLocalGroceryStore/>GROCERY</Link></li>
-            <li className="list-inline-item"><Link to="/"><ImBlog/>BLOG</Link></li>
-            <li className="list-inline-item"><Link to="/"><IoIosContact/>CONTACT US</Link></li>
+            <li className="list-inline-item"><Link to="/"><Button><IoHomeOutline/> &nbsp;HOME</Button></Link></li>
+            <li className="list-inline-item"><Link to="/"><Button><GiClothes/>FASHION</Button></Link></li>
+            <li className="list-inline-item"><Link to="/"><Button><FaMobileAlt/>ELECTRONICS</Button></Link></li>
+            <li className="list-inline-item"><Link to="/"><Button><GiCakeSlice/>BAKERY</Button></Link></li>
+            <li className="list-inline-item"><Link to="/"><Button><MdOutlineLocalGroceryStore/>GROCERY</Button></Link></li>
+            <li className="list-inline-item"><Link to="/"><Button><ImBlog/>BLOG</Button></Link></li>
+            <li className="list-inline-item"><Link to="/"><Button><IoIosContact/>CONTACT US</Button></Link></li>
         </ul>
       </div>
       </div>

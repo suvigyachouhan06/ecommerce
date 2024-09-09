@@ -10,9 +10,13 @@ import { FaCartShopping } from "react-icons/fa6";
 import Searchbar from './seachBar/Searchbar'
 import Dropbox from './dropBox/Dropbox'
 import Navigation from './navigation/Navigation'
+import {useContext} from 'react'
+import {myContext} from '../../App'
+
 
 
 const Header = () => {
+  const context =useContext(myContext)
   return (
     <div>
       <div className="headerWrapper">
@@ -29,8 +33,10 @@ const Header = () => {
                     <Link to={'/'}><img src={Logo}></img></Link>
                 </div>
                 <div className='col-sm-9 d-flex align-items-center part2'>
-                    
-                  <Dropbox/>
+                    {
+                      context.countryList.length !==0 && <Dropbox/>
+                 
+                    }
                     {/* header search start here */}
                    <Searchbar/>
 
