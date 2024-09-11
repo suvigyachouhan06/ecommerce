@@ -36,7 +36,7 @@ nav .allCatTab{
     color: rgba(0,0,0,0.8);
     display: flex;
     align-items: center;
-    padding: 10px 14px;
+    padding: 8px 14px;
     transition: all 0.2s ease-in-out;
     border-radius: 25px;
   }
@@ -55,4 +55,62 @@ nav .allCatTab{
   nav .navPart2{
     max-width: 80%;
     flex: 0 0 80%;
+  }
+
+  nav .navPart2 ul li{position: relative;padding-bottom: 20px;}
+  nav .navPart2 ul li .submenu{
+    position: absolute;
+    top: 150%;
+    left: 0px;
+    min-width: 200px;
+    background: #fff;
+    opacity: 0; visibility: hidden; transition: all 0.2s ease-in-out;
+  }
+
+  nav .navPart2 ul li:hover .submenu{
+    opacity: 1;
+    visibility: inherit;
+    top: 100%;
+  }
+
+  nav .navPart2 ul li .submenu a{
+    display: block;
+    width: 100%;
+  }
+
+  nav .navPart2 ul li .submenu a button{
+    width: 100%;
+    justify-content: flex-start;
+    border-radius: 0px;
+    text-transform: capitalize;
+    font-weight: 600;
+  }
+  nav .navPart2 ul li .submenu a button:hover{
+    background: #f1f1f1;
+  }
+  .navPart1 .cartWrapper{
+    position: relative;
+  }
+  .navPart1 .cartWrapper .sidebarNav{
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    top: 135%;
+    left: 0px;
+    padding: 15px 0px ;
+    height: auto;
+  }
+  .navPart1 .cartWrapper .sidebarNav ul li{
+    list-style: none;
+    width: 100%;
+    padding: 0px 15px;
+  }
+  .navPart1 .cartWrapper .sidebarNav ul li button{
+    color: #000;
+    width: 100%;
+    justify-content: flex-start;
+    text-transform: capitalize;
+  }
+  nav .navPart1 .cartWrapper .sidebarNav ul li button:hover{
+    background: transparent;
   }

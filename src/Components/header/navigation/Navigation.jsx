@@ -19,21 +19,61 @@ const Navigation = () => {
     <div className="container my-4">
     <div className="row">
       <div className="col-sm-2 navPart1">
+        <div className="cartWrapper">
         <Button className='allCatTab align-items-center'>
           <span className='icon1 me-2'><IoIosMenu/></span>
           <span class='text'>ALL CATEGORIES</span>
           <span className='icon2 ms-2'><FaAngleDown/></span>
         </Button>
+
+        <div className="sidebarNav shadow">
+          <ul>
+            <li><Link to="/"><Button>Clothing</Button></Link></li>
+            <li><Link to="/"><Button>Footwear</Button></Link></li>
+            <li><Link to="/"><Button>Watches</Button></Link></li>
+          </ul>
+        </div>
+        </div>
       </div>
 
       <div className="col-sm-10 navPart2 d-flex align-items-center ">
         <ul className="list list-inline ms-alto">
             <li className="list-inline-item"><Link to="/"><Button><IoHomeOutline/> &nbsp;HOME</Button></Link></li>
-            <li className="list-inline-item"><Link to="/"><Button><GiClothes/>MEN</Button></Link></li>
-            <li className="list-inline-item"><Link to="/"><Button><FaMobileAlt/>WOMEN</Button></Link></li>
-            <li className="list-inline-item"><Link to="/"><Button><GiCakeSlice/>BEAUTY</Button></Link></li>
-            <li className="list-inline-item"><Link to="/"><Button><MdOutlineLocalGroceryStore/>WATCHES</Button></Link></li>
-            <li className="list-inline-item"><Link to="/"><Button><ImBlog/>KIDS</Button></Link></li>
+            <li className="list-inline-item"><Link to="/"><Button><GiClothes/>MEN</Button></Link>
+            <div className="submenu shadow">
+              <Link to="/"><Button>Clothing</Button></Link>
+              <Link to="/"><Button>Footwear</Button></Link>
+              <Link to="/"><Button>Watches</Button></Link>
+            </div>
+            </li>
+            <li className="list-inline-item"><Link to="/"><Button><FaMobileAlt/>WOMEN</Button></Link>
+            <div className="submenu shadow">
+              <Link to="/"><Button>Clothing</Button></Link>
+              <Link to="/"><Button>Footwear</Button></Link>
+              <Link to="/"><Button>Watches</Button></Link>
+            </div>
+            </li>
+            <li className="list-inline-item"><Link to="/"><Button><GiCakeSlice/>BEAUTY</Button></Link>
+            <div className="submenu shadow">
+              <Link to="/"><Button>Clothing</Button></Link>
+              <Link to="/"><Button>Footwear</Button></Link>
+              <Link to="/"><Button>Watches</Button></Link>
+            </div>
+            </li>
+            <li className="list-inline-item"><Link to="/"><Button><MdOutlineLocalGroceryStore/>WATCHES</Button></Link>
+            <div className="submenu shadow">
+              <Link to="/"><Button>Clothing</Button></Link>
+              <Link to="/"><Button>Footwear</Button></Link>
+              <Link to="/"><Button>Watches</Button></Link>
+            </div>
+            </li>
+            <li className="list-inline-item"><Link to="/"><Button><ImBlog/>KIDS</Button></Link>
+            <div className="submenu shadow">
+              <Link to="/"><Button>Clothing</Button></Link>
+              <Link to="/"><Button>Footwear</Button></Link>
+              <Link to="/"><Button>Watches</Button></Link>
+            </div>
+            </li>
             <li className="list-inline-item"><Link to="/"><Button><IoIosContact/>GIFT</Button></Link></li>
             <li className="list-inline-item"><Link to="/"><Button><ImBlog/>BLOGS</Button></Link></li>
             <li className="list-inline-item"><Link to="/"><Button><IoIosContact/>CONTACT US</Button></Link></li>
