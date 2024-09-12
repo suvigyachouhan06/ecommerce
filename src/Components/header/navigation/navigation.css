@@ -65,6 +65,7 @@ nav .allCatTab{
     min-width: 200px;
     background: #fff;
     opacity: 0; visibility: hidden; transition: all 0.2s ease-in-out;
+    z-index: 100;
   }
 
   nav .navPart2 ul li:hover .submenu{
@@ -92,13 +93,24 @@ nav .allCatTab{
     position: relative;
   }
   .navPart1 .cartWrapper .sidebarNav{
-    width: 100%;
+    width: 100% ;
     background: #fff;
     position: absolute;
     top: 135%;
     left: 0px;
     padding: 15px 0px ;
+    height: 0px;
+    opacity: 0;
+    border: 1px solid rgba(0,0,0,0.1);
+    transition: all 0.2;
+    visibility: hidden;
+    z-index: 100;
+  }
+
+  .navPart1 .cartWrapper .sidebarNav.open{
     height: auto;
+    opacity: 1;
+    visibility: inherit;
   }
   .navPart1 .cartWrapper .sidebarNav ul li{
     list-style: none;

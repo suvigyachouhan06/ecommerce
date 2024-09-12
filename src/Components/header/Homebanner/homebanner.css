@@ -1,0 +1,35 @@
+.slick-prev,
+.slick-next {
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5); /* Optional background for better visibility */
+  border-radius: 50%; /* Optional to make them circular */
+}
+
+.slick-prev {
+  left: 10px; /* Move the "Previous" button to the left */
+}
+
+.slick-next {
+  right: 10px; /* Move the "Next" button to the right */
+}
+.homeBannerSection {
+    
+    /* padding: 5px;  */
+    max-width: 100%;
+    margin: 0 auto; 
+    border: 1px solid transparent;
+    border-radius: 15px;
+  }
+
+
+.homeBannerSection .item img{
+ height: 450px;
+ width: 100%;
+ object-fit: cover; 
+ display: block;
+
+}

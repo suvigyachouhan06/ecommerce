@@ -1,11 +1,12 @@
 import React from 'react'
+import HomeBanner from '../../Components/header/Homebanner/HomeBanner'
 
 const Home = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+      <HomeBanner/>
+    </>
   )
 }
 
-export default Home
+export default Home;

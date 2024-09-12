@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Button from '@mui/material/Button'
 import { IoIosMenu } from "react-icons/io";
 import { FaAngleDown } from "react-icons/fa";
@@ -14,19 +14,23 @@ import "./navigation.css"
 import { Link } from 'react-router-dom';
 
 const Navigation = () => {
+  const [isOpenSidebarNav,setIsOpenSidebarNav]= useState(false)
+
+
+
   return (
     <nav>
     <div className="container my-4">
     <div className="row">
       <div className="col-sm-2 navPart1">
         <div className="cartWrapper">
-        <Button className='allCatTab align-items-center'>
+        <Button className='allCatTab align-items-center' onClick={()=>setIsOpenSidebarNav(!isOpenSidebarNav)}>
           <span className='icon1 me-2'><IoIosMenu/></span>
           <span class='text'>ALL CATEGORIES</span>
           <span className='icon2 ms-2'><FaAngleDown/></span>
         </Button>
 
-        <div className="sidebarNav shadow">
+        <div className={`sidebarNav shadow ${isOpenSidebarNav===true ? "open":""}`}>
           <ul>
             <li><Link to="/"><Button>Clothing</Button></Link></li>
             <li><Link to="/"><Button>Footwear</Button></Link></li>
