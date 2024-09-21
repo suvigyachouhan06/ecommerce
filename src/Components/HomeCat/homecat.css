@@ -1,0 +1,39 @@
+.homeCat{
+    padding: 35px 0px;
+}
+.homeCat .swiper{
+    overflow: inherit;
+}
+.homeCat .swiper .item{
+    padding: 15px;
+    width: 100%;
+    height: auto;
+    background: #feefea;
+    border-radius: 10px;
+}
+
+.homeCat .swiper .item img{
+    width: 80%;
+}
+.homeCat .hd{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.homeCat .swiper-button-prev,.homeCat .swiper-button-next{
+    top: -30px;
+    width: 30px !important;
+    height: 30px !important;
+
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 17px; /* Adjust icon size for default Swiper arrows */
+  color: black;
+}
+
+.homeCat .swiper-button-prev{
+    right: 68px;
+    left: inherit;
+}

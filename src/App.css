@@ -12,4 +12,183 @@
 body{
   font-family: "Lato",sans-serif;
   font-size: 14px;
+  overflow-x: hidden;
+}
+
+.homeProducts{
+  padding: 25px 0px;
+  width: 100%;
+}
+.homeProducts .banner{
+  
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: visible; /* Allow horizontal overflow */
+}
+.homeProducts .banner img{
+  width: 100%;  /* Make sure the image fits the container */
+  height: auto; /* Keep the aspect ratio */
+  border-radius: 7px !important;
+}
+.homeProducts .banner2{
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: visible; /* Allow horizontal overflow */
+}
+.homeProducts .banner2 img{
+  width: 100%;  /* Make sure the image fits the container */
+  height: auto; /* Keep the aspect ratio */
+  border-radius: 7px !important;
+}
+.info .text{
+  color: #8b8b8b;
+}
+.productrow .hd{
+  font-size: 25px;
+  font-weight: 600;
+}
+.productrow .viewAllBtn{
+  padding: 5px 25px;
+  border: #fff;
+  border: 1px solid rgba(0,0,0,0.1);
+  color: #414141;
+  border-radius: 30px;
+  font-weight: 600;
+  text-transform: capitalize;
+
+}
+.productrow .viewAllBtn svg{
+  font-size: 18px;
+}
+.productItem{
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(0,0,0,0.1);
+  cursor: pointer;
+  position: relative;
+}
+.productItem .badge{
+display: inline-block;
+padding: 8px 11px;
+position: absolute;
+top: 10px;
+left: 4px;
+z-index: 100;
+background-color: rgb(156, 39, 39);
+}
+.productItem .actions{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+}
+.productItem .actions button{
+  background-color: #fff;
+  color: #000;
+  height: 30px;
+  width: 30px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+
+  padding: 0px 0px 2px 0px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.productItem .actions button svg{
+opacity: 0.7;
+font-size: 18px;
+}
+.productItem .actions:hover button{
+  opacity: 1;
+  visibility: inherit;
+
+}
+.productItem .actions .wishList svg{
+  color: rgb(206, 32, 32);
+}
+.productItem .actions .fullScreen:hover{
+  transform: scale(1.1);
+
+}
+.productItem .actions .wishList:hover{
+  transform: scale(1.1);
+}
+.productItem .info h4{
+  font-size: 15px;
+  font-weight: 600;
+}
+.productItem .info{
+  padding: 15px;
+}
+.productItem .info .oldPrice{
+  font-size: 16px;
+  font-weight: bold;
+  color: rgba(0,0,0,0.2);
+  text-decoration: line-through;
+}
+.productItem .info .netPrice{
+  font-size: 16px;
+  font-weight: bold;
+
+}
+.product_row .productItem{
+  overflow: hidden;
+  border-right: 1px solid rgba(0,0,0,0.1) !important;
+}
+.product_row .swiper-slide:last-child .productItem{
+
+  border: 1px solid rgba(0,0,0,0.1) !important;
+}
+.swiper{
+  padding-right: 1px;
+}
+
+.productItem .imgWrapper img{
+  transition: all 0.3s ease-in-out;
+}
+.productItem .imgWrapper:hover img{
+  transform: scale(1.06);
+}
+.productRow2{
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.productRow2 .productItem{
+  width: 24%;
+  overflow: hidden;
+  border-right: 1px solid rgba(0,0,0,0.1) !important;
+}
+.bannerSec{
+  gap: 15px;
+}
+
+.sticky{
+  position: sticky;
+  top: 10px;
+  z-index: 100;
+}
+
+.newsLetterSection{
+  width: 100%;
+  height: auto;
+  background: #233a95;
+}
+
+.newsLetterSection p{
+  font-size: 18px;
+  margin: 10px 0px;
+}
+.newsLetterSection h3{
+  font-size: 30px;
+  font-weight: bold;
+}
+.newsLetterSection p.text-secondary{
+  color: #fff !important;
+  opacity: 0.5 !important;
+  font-size: 15px;
 }

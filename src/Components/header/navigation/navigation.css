@@ -74,6 +74,10 @@ nav .allCatTab{
     top: 100%;
   }
 
+  nav .navPart2 ul li:hover .submenu button{
+    border-radius: 0px;
+  }
+
   nav .navPart2 ul li .submenu a{
     display: block;
     width: 100%;
@@ -97,9 +101,9 @@ nav .allCatTab{
     background: #fff;
     position: absolute;
     top: 135%;
-    left: 0px;
+    /* left: 0px; */
     padding: 15px 0px ;
-    height: 0px;
+    height: 100%;
     opacity: 0;
     border: 1px solid rgba(0,0,0,0.1);
     transition: all 0.2;
@@ -115,7 +119,30 @@ nav .allCatTab{
   .navPart1 .cartWrapper .sidebarNav ul li{
     list-style: none;
     width: 100%;
-    padding: 0px 15px;
+    padding: 0px 10px;
+    position: static;
+    
+  }
+
+  .navPart1 .cartWrapper .sidebarNav ul li .submenu{
+    position: absolute;
+    top: 0px;
+    left: 102%;
+    width: 250px;
+    height: 100%;
+    background: #fff;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease-in-out;
+    border: 1px solid rgba(0,0,0,0.1);
+    padding: 17px;
+  }
+
+  .navPart1 .cartWrapper .sidebarNav ul li:hover .submenu{
+    opacity: 1;
+    visibility: inherit;
+    left: 100%;
   }
   .navPart1 .cartWrapper .sidebarNav ul li button{
     color: #000;
@@ -123,6 +150,11 @@ nav .allCatTab{
     justify-content: flex-start;
     text-transform: capitalize;
   }
+  .navPart1 .cartWrapper .sidebarNav ul li button svg{
+    font-size: 15px;
+    opacity: 0.6;
+  }
   nav .navPart1 .cartWrapper .sidebarNav ul li button:hover{
     background: transparent;
   }
+

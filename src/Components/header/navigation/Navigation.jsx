@@ -9,6 +9,7 @@ import { GiCakeSlice } from "react-icons/gi";
 import { MdOutlineLocalGroceryStore } from "react-icons/md";
 import { ImBlog } from "react-icons/im";
 import { IoIosContact } from "react-icons/io";
+import { MdKeyboardArrowRight } from "react-icons/md";
 
 import "./navigation.css"
 import { Link } from 'react-router-dom';
@@ -32,9 +33,60 @@ const Navigation = () => {
 
         <div className={`sidebarNav shadow ${isOpenSidebarNav===true ? "open":""}`}>
           <ul>
-            <li><Link to="/"><Button>Clothing</Button></Link></li>
-            <li><Link to="/"><Button>Footwear</Button></Link></li>
+            <li><Link to="/"><Button>Men <div className="ms-auto"><MdKeyboardArrowRight/></div></Button></Link>
+            <div className="submenu shadow">
+            <li><Link to="/"><Button>Women</Button></Link></li>
+            <li><Link to="/"><Button>Beauty</Button></Link></li>
             <li><Link to="/"><Button>Watches</Button></Link></li>
+            <li><Link to="/"><Button>Footwear</Button></Link></li>
+            <li><Link to="/"><Button>Kids</Button></Link></li>
+            </div>
+            </li>
+            <li><Link to="/"><Button>Women <div className="ms-auto"><MdKeyboardArrowRight/></div></Button></Link>
+            <div className="submenu shadow">
+            <li><Link to="/"><Button>Women</Button></Link></li>
+            <li><Link to="/"><Button>Beauty</Button></Link></li>
+            <li><Link to="/"><Button>Watches</Button></Link></li>
+            <li><Link to="/"><Button>Footwear</Button></Link></li>
+            <li><Link to="/"><Button>Kids</Button></Link></li>
+            </div>
+            </li>
+            <li><Link to="/"><Button>Beauty <div className="ms-auto"><MdKeyboardArrowRight/></div></Button></Link>
+            <div className="submenu shadow">
+            <li><Link to="/"><Button>Women</Button></Link></li>
+            <li><Link to="/"><Button>Beauty</Button></Link></li>
+            <li><Link to="/"><Button>Watches</Button></Link></li>
+            <li><Link to="/"><Button>Footwear</Button></Link></li>
+            <li><Link to="/"><Button>Kids</Button></Link></li>
+            </div>
+            </li>
+            <li><Link to="/"><Button>Watches <div className="ms-auto"><MdKeyboardArrowRight/></div></Button></Link>
+            <div className="submenu shadow">
+            <li><Link to="/"><Button>Women</Button></Link></li>
+            <li><Link to="/"><Button>Beauty</Button></Link></li>
+            <li><Link to="/"><Button>Watches</Button></Link></li>
+            <li><Link to="/"><Button>Footwear</Button></Link></li>
+            <li><Link to="/"><Button>Kids</Button></Link></li>
+            </div>
+            </li>
+            <li><Link to="/"><Button>Footwear<div className="ms-auto"><MdKeyboardArrowRight/></div></Button></Link>
+            <div className="submenu shadow">
+            <li><Link to="/"><Button>Women</Button></Link></li>
+            <li><Link to="/"><Button>Beauty</Button></Link></li>
+            <li><Link to="/"><Button>Watches</Button></Link></li>
+            <li><Link to="/"><Button>Footwear</Button></Link></li>
+            <li><Link to="/"><Button>Kids</Button></Link></li>
+            </div>
+            </li>
+            <li><Link to="/"><Button>Kids <div className="ms-auto"><MdKeyboardArrowRight/></div></Button></Link>
+            <div className="submenu shadow">
+            <li><Link to="/"><Button>Women</Button></Link></li>
+            <li><Link to="/"><Button>Beauty</Button></Link></li>
+            <li><Link to="/"><Button>Watches</Button></Link></li>
+            <li><Link to="/"><Button>Footwear</Button></Link></li>
+            <li><Link to="/"><Button>Kids</Button></Link></li>
+            </div>
+            </li>
           </ul>
         </div>
         </div>
