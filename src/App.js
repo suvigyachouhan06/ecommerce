@@ -5,6 +5,7 @@ import Header from "./Components/header/Header";
 import Home from "./pages/Home/Home";
 import { createContext, useEffect, useState } from "react";
 import axios from 'axios'
+import Footer from "./Components/footer/Footer";
 
  export const myContext= createContext()
 
@@ -34,6 +35,7 @@ function App() {
    <Routes>
     <Route path="/"  element={<Home/>}/>
    </Routes>
+   <Footer/> 
    </myContext.Provider>
    </BrowserRouter>
    </>
