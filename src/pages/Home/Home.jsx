@@ -12,6 +12,7 @@ import { AiOutlineFullscreen } from "react-icons/ai";
 import { FaRegHeart } from "react-icons/fa";
 import ProductItem from '../../Components/productitem/ProductItem';
 import HomeCat from '../../Components/HomeCat/HomeCat';
+import { IoMailOutline } from "react-icons/io5";
 
 const Home = () => {
  
@@ -132,6 +133,11 @@ const Home = () => {
                   <p className="text-white mb-1">Rs 300 discount for your first order</p>
                   <h3 className="text-white">Join our newsletter and get...</h3>
                   <p className="text-secondary">Join our email subscription now to get updates on <br /> promotions and coupons.</p>
+            <form action="">
+              <IoMailOutline/>
+              <input type="text" placeholder='Your E-mail Address' />
+              <Button>Subscribe</Button>
+            </form>
             </div>
             <div className="col-md-6">
               <img src="https://fullstack-ecommerce.netlify.app/static/media/newsletter.5931358dd220a40019fc.png" alt="" />

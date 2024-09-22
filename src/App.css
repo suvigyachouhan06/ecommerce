@@ -177,8 +177,13 @@ font-size: 18px;
   width: 100%;
   height: auto;
   background: #233a95;
+  position: relative;
+  overflow: hidden;
+  padding: 100px 0px;
 }
-
+.newsLetterSection .col-md-6{
+  position: static;
+  }
 .newsLetterSection p{
   font-size: 18px;
   margin: 10px 0px;
@@ -191,4 +196,50 @@ font-size: 18px;
   color: #fff !important;
   opacity: 0.5 !important;
   font-size: 15px;
+}
+
+.newsLetterSection img{
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+
+}
+
+.newsLetterSection form{
+  width: 100%;
+  height: 60px;
+  background: #fff;
+  padding: 10px;
+  position: relative;
+  border-radius: 5px;
+}
+
+.newsLetterSection form svg{
+  position: absolute;
+  left: 10px;
+  top: 17px;
+  font-size: 25px;
+  opacity: 0.3;
+}
+.newsLetterSection form input{
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  outline: none;
+  border: 0px;
+  padding-left: 40px;
+  padding-right: 200px;
+}
+
+.newsLetterSection form button{
+  position: absolute;
+  top: 6px;
+  right: 7px;
+  background: #233a95;
+  font-size: 16px;
+  padding: 12px 25px;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 600;
 }
