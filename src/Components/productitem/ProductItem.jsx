@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Rating from '@mui/material/Rating';
 import { AiOutlineFullscreen } from "react-icons/ai";
 import { FaRegHeart } from "react-icons/fa";
+import ProductModal from '../productModal/ProductModal';
 
 const ProductItem = () => {
+  const[isOpenProductModal,setIsOpenProductModal]=useState(false);
+  const viewProduuctDetails=(id)=>{
+    setIsOpenProductModal(true)
+  }
   return (
     <>
                 <div className="item productItem mt-4">
@@ -16,7 +21,7 @@ const ProductItem = () => {
                       <span className='badge badge-primary'>28 %</span>
 
                       <div className="actions">
-                        <button className='fullScreen'><AiOutlineFullscreen/></button>
+                        <button onClick={()=>viewProduuctDetails(1)} className='fullScreen'><AiOutlineFullscreen/></button>
                         <button className='wishList'><FaRegHeart/></button>
                       </div>
                     </div>
@@ -31,6 +36,8 @@ const ProductItem = () => {
                     </div>
                     </div>
                   </div>
+                  {isOpenProductModal===true &&  <ProductModal/>}
+               
     </>
   )
 }

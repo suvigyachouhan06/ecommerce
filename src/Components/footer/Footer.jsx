@@ -5,6 +5,10 @@ import { RiDiscountPercentLine } from "react-icons/ri";
 import { IoIosPricetag } from "react-icons/io";
 import "./footer.css"
 import { Link } from 'react-router-dom';
+import { FaRegCopyright } from "react-icons/fa6";
+import { FaFacebook } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -73,7 +77,7 @@ const Footer = () => {
                 </div>
 
                 <div className="col">
-                    <h5>BEVERAGES</h5>
+                    <h5 className=' ms-4'>BEVERAGES</h5>
                     <ul>
                         <li><Link to="#">Fresh Vegetables</Link></li>
                         <li><Link to="#">Herbs & Seasonings</Link></li>
@@ -97,6 +101,21 @@ const Footer = () => {
                         <li><Link to="#">Party Trays</Link></li>
                     </ul>
                 </div>
+            </div>
+
+            <div className="copyright mt-3 pt-3 pb-3 d-flex">
+                <p className='mb-0'>Copyright 2024 <FaRegCopyright/> Shopify. All rights reserved</p>
+                <ul className="list list-inline ms-auto mb-0">
+                    <li className="list-inline-item">
+                        <Link to="#"><FaFacebook/></Link>
+                    </li>
+                    <li className="list-inline-item">
+                        <Link to="#"><FaInstagram/></Link>
+                    </li>
+                    <li className="list-inline-item"><Link to="#"><FaXTwitter/></Link>
+                    </li>
+                        
+                </ul>
             </div>
         </div>
     </footer>

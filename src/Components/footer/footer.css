@@ -37,3 +37,21 @@ footer .linksWrap ul li a{
     font-size: 13px;
     text-decoration: none;
 }
+footer .copyright ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 50%;
+    transition: all 0.3s ;
+}
+footer .copyright ul li a svg{
+    font-size: 20px;
+    color: rgba(0,0,0,0.8);
+    color: #233a95;
+}
+footer .copyright ul li a:hover{
+    background: #8ddfff;
+}
