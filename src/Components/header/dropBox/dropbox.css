@@ -51,8 +51,8 @@
   }
   .locationModal .closeModal{
       position: absolute;
-      top: -5px;
-      right: -4px;
+      top: 5px;
+      right: 5px;
     
       color: #000;
       min-width: 40px;

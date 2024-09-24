@@ -9,6 +9,9 @@ const ProductItem = () => {
   const viewProduuctDetails=(id)=>{
     setIsOpenProductModal(true)
   }
+  const closeProductsModal=()=>{
+    setIsOpenProductModal(false)
+  }
   return (
     <>
                 <div className="item productItem mt-4">
@@ -36,7 +39,7 @@ const ProductItem = () => {
                     </div>
                     </div>
                   </div>
-                  {isOpenProductModal===true &&  <ProductModal/>}
+                  {isOpenProductModal===true &&  <ProductModal closeProductsModal={closeProductsModal} />}
                
     </>
   )
