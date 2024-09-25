@@ -1,16 +1,18 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import Rating from '@mui/material/Rating';
 import { AiOutlineFullscreen } from "react-icons/ai";
 import { FaRegHeart } from "react-icons/fa";
 import ProductModal from '../productModal/ProductModal';
+import {myContext} from '../../App'
 
 const ProductItem = () => {
+  const context =useContext(myContext);
   const[isOpenProductModal,setIsOpenProductModal]=useState(false);
   const viewProduuctDetails=(id)=>{
-    setIsOpenProductModal(true)
+        setIsOpenProductModal(true)
   }
   const closeProductsModal=()=>{
-    setIsOpenProductModal(false)
+        setIsOpenProductModal(false)
   }
   return (
     <>
