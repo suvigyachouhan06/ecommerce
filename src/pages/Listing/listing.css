@@ -1,0 +1,13 @@
+.product_Listing_Page .productListing{
+    gap: 20px;
+}
+.product_Listing_Page .productListing .sidebar{
+    width: 20%;
+    flex: 0 0 20%;
+}
+
+.product_Listing_Page .productListing .sidebar .filterbox h6{
+    font-weight: 700;
+    font-size: 14px;
+}
+

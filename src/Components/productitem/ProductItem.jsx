@@ -8,12 +8,15 @@ import {myContext} from '../../App'
 const ProductItem = () => {
   const context =useContext(myContext);
   const[isOpenProductModal,setIsOpenProductModal]=useState(false);
+ 
   const viewProduuctDetails=(id)=>{
-        setIsOpenProductModal(true)
+      context.setIsOpenProductModal(true)
   }
+
   const closeProductsModal=()=>{
-        setIsOpenProductModal(false)
-  }
+    context.setIsOpenProductModal(false)
+}
+  
   return (
     <>
                 <div className="item productItem mt-4">
@@ -22,6 +25,9 @@ const ProductItem = () => {
                         src="https://res.cloudinary.com/da26rdzwp/image/upload/v1726541933/1726541933044_siril-georgette-brown-color-saree-with-blouse-piece-product-images-rvegeptjtj-0-202308161431.webp"
                         className='w-100'
                         alt="Product 1"
+                      
+                      
+                      
                       />
                       <span className='badge badge-primary'>28 %</span>
 
@@ -41,8 +47,6 @@ const ProductItem = () => {
                     </div>
                     </div>
                   </div>
-                  {isOpenProductModal===true &&  <ProductModal closeProductsModal={closeProductsModal} />}
-               
     </>
   )
 }

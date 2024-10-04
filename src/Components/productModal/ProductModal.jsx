@@ -1,6 +1,6 @@
 import Dialog from '@mui/material/Dialog';
 import Button from '@mui/material/Button'
-import React, { useRef, useState } from 'react'
+import React, { useContext, useRef, useState } from 'react'
 import { MdClose } from 'react-icons/md';
 import Rating from '@mui/material/Rating';
 import "./productmodal.css"
@@ -12,12 +12,15 @@ import "slick-carousel/slick/slick-theme.css";
 import { FaHeart } from "react-icons/fa6";
 import { MdCompareArrows } from "react-icons/md";
 import QuantityBox from '../QuantityBox/QuantityBox';
+import {myContext} from '../../App'
 
 const ProductModal = ({closeProductsModal}) => {
   const [inputValue,setInputValue]=useState();
   const[activeSize,setActiveSize]=useState();
   const zoomSliderBig =useRef();
   const zoomSlider=useRef();
+
+  const context=useContext(myContext);
 
   var settings= {
     dots:false,
@@ -51,8 +54,8 @@ const ProductModal = ({closeProductsModal}) => {
 
   return (
     <>
-        <Dialog className='productModal' open={true} onClose={closeProductsModal}>
-        <Button className='close_' onClick={closeProductsModal}><MdClose/></Button>
+        <Dialog className='productModal' open={true} onClose={()=>context.setIsOpenProductModal(false)}>
+        <Button className='close_' onClick={()=>context.setIsOpenProductModal(false)}><MdClose/></Button>
         <h4 className='mb-1 font-weight-bold'>Siril Georgette Brown Color Saree with Blouse piece</h4>
         <div className="d-flex align-items-center">
         <div className="d-flex align-items-center me-4">
