@@ -15,7 +15,7 @@ import QuantityBox from '../QuantityBox/QuantityBox';
 import {myContext} from '../../App'
 
 const ProductModal = ({closeProductsModal}) => {
-  const [inputValue,setInputValue]=useState();
+  const [slideIndex,setSlideIndex]=useState(0);
   const[activeSize,setActiveSize]=useState();
   const zoomSliderBig =useRef();
   const zoomSlider=useRef();
@@ -43,6 +43,7 @@ const ProductModal = ({closeProductsModal}) => {
   }
 
   const goto=(index)=>{
+    setSlideIndex(index)
     zoomSlider.current.slickGoTo(index)
     zoomSliderBig.current.slickGoTo(index)
   }
@@ -103,19 +104,19 @@ const ProductModal = ({closeProductsModal}) => {
             </div>
 
             <Slider {...settings} className='zoomSlider' ref={zoomSlider}>
-            <div className="item">
+            <div className={`item ${slideIndex===0 && 'item_active'}`}>
                         <img src={`https://res.cloudinary.com/da26rdzwp/image/upload/v1726541935/1726541933305_siril-georgette-brown-color-saree-with-blouse-piece-product-images-rvegeptjtj-3-202308161432.webp`} onClick={()=>goto(0)} className='w-100'
                         />
             </div>
-            <div className="item">
+            <div className={`item ${slideIndex===1 && 'item_active'}`}>
                         <img src={`https://res.cloudinary.com/da26rdzwp/image/upload/v1726541934/1726541933061_siril-georgette-brown-color-saree-with-blouse-piece-product-images-rvegeptjtj-1-202308161431.jpg`} onClick={()=>goto(1)} className='w-100'
                         />
             </div>
-            <div className="item">
+            <div className={`item ${slideIndex===2 && 'item_active'}`}>
                         <img src={`https://res.cloudinary.com/da26rdzwp/image/upload/v1726541935/1726541933287_siril-georgette-brown-color-saree-with-blouse-piece-product-images-rvegeptjtj-2-202308161432.webp`} onClick={()=>goto(2)} className='w-100'
                         />
             </div>
-            <div className="item">
+            <div className={`item ${slideIndex===3 && 'item_active'}`}>
                         <img src={`https://res.cloudinary.com/da26rdzwp/image/upload/v1726541935/1726541933305_siril-georgette-brown-color-saree-with-blouse-piece-product-images-rvegeptjtj-3-202308161432.webp`} onClick={()=>goto(3)} className='w-100'
                         />
             </div>

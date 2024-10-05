@@ -1,5 +1,6 @@
 import React from 'react'
 import Sidebar from '../../Components/sidebar/Sidebar'
+
 import "./listing.css"
 const Listing = () => {
   return (
@@ -9,7 +10,7 @@ const Listing = () => {
             <div className="productListing d-flex">
                 <Sidebar/>
                 <div className="content_right">
-                content_right8
+               <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/08/bacola-banner-18.jpg" alt="" style={{borderRadius:"8px"}}/>
                 </div>
             </div>
         </div>

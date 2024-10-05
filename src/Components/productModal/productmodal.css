@@ -141,3 +141,6 @@
     font-size: 16px;
     color: #233a95 !important;
   }
+  .zoomSlider .item_active{
+    border: 2px solid rgba(0,0,0,0.4) !important;
+  }
