@@ -1,0 +1,43 @@
+.hd{
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.info .oldPrice{
+    font-size: 18px;
+}
+.info .netPrice{
+    font-size: 20px;
+}
+.badge{
+    background: #e5f8ed !important;
+    color: #16b858 !important;
+    padding: 7px 10px;
+    display: inline-block;
+  }
+  .productSize{
+    width: 100%;
+    height: auto;
+    padding: 25px 0px;
+  }
+  .productSize ul li{
+    margin-right: 10px !important;
+  }
+  .productSize ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius:5px ;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    transition: all 0.1s ease-in-out;
+  }
+
+  .productSize ul li a.active{
+    background: #2bbef9 ;
+    color: #fff;
+  }

@@ -4,12 +4,14 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import RangeSlider from 'react-range-slider-input';
 import 'react-range-slider-input/dist/style.css';
 import { Link } from 'react-router-dom';
+import "./sidebar.css"
 
 const Sidebar = () => {
   const[value,setValue]=useState([100,60000])
   const[value2,setValue2]=useState(0)
   return (
     <div className='sidebar'>
+      
       <div className="filterbox">
         <h6>PRODUCT CATEGORIES</h6>
 
@@ -128,6 +130,7 @@ const Sidebar = () => {
       <br />
       <Link to="#"><img src="https://klbtheme.com/bacola/wp-content/uploads/2021/05/sidebar-banner.gif" alt="" className='w-100'/></Link>
     </div>
+    
   )
 }
 

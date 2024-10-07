@@ -5,7 +5,7 @@ import { FaRegHeart } from "react-icons/fa";
 import ProductModal from '../productModal/ProductModal';
 import {myContext} from '../../App'
 
-const ProductItem = () => {
+const ProductItem = (props) => {
   const context =useContext(myContext);
   const[isOpenProductModal,setIsOpenProductModal]=useState(false);
  
@@ -19,7 +19,7 @@ const ProductItem = () => {
   
   return (
     <>
-                <div className="item productItem mt-4">
+                <div className={`item productItem mt-4 ${props.itemView}`}>
                     <div className="imgWrapper">
                       <img
                         src="https://res.cloudinary.com/da26rdzwp/image/upload/v1726541933/1726541933044_siril-georgette-brown-color-saree-with-blouse-piece-product-images-rvegeptjtj-0-202308161431.webp"

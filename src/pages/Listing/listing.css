@@ -26,8 +26,8 @@
     height: 5px !important;
 }
 .product_Listing_Page .productListing .content_right{
-    width: 80%;
-    flex: 0 0 80%;
+    width: 78%;
+    flex: 0 0 78%;
     padding-left: 50px;
 }
 .product_Listing_Page .productListing .sidebar .filterbox{
@@ -58,4 +58,70 @@
 .range-slider .range-slider__thumb{
     width: 15px;
     height: 15px;
+}
+.showBy{
+    width: 100%;
+    height: auto;
+    background: #edeef5;
+    padding: 15px 25px;
+}
+.showBy .btnWrapper Button{
+    min-width: 35px !important;
+    height: 35px !important;
+    width: 30px !important;
+    border-radius: 50%;
+    color: #000;
+}
+.showBy .btnWrapper Button svg{
+    color: #000;
+    font-size: 18px;
+    opacity: 0.5;
+}
+.showBy .btnWrapper Button:hover svg{
+    opacity: 1;
+}
+.showByFilter Button{
+    min-width: auto;
+    color: #000;
+}
+.showByFilter Button svg{
+    color: #000;
+    opacity: 0.2;
+    margin-left: 5px;
+}
+.showPerPageDropdown .MuiPaper-root {
+    width: 80px !important;
+}
+.productListing{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.productListing .productItem.four{
+    width: 23%;
+}
+.productListing .productItem.three{
+    width: 31.5%;
+}
+.productListing .productItem.two{
+    width: 48%;
+}
+.productListing .productItem.one{
+    width: 100%;
+    display: flex;
+    align-items: center;
+  /* max-height: 260px;
+  height: 260px; */
+}
+
+.productListing .productItem.one .imgWrapper{
+    width: 20%;
+    overflow: hidden;
+    /* max-height: 260px;
+    height: 260px; */
+ 
+}
+
+.showBy .btnWrapper Button.act svg{
+    opacity: 1 !important;
 }
