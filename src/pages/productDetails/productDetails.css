@@ -41,3 +41,52 @@
     background: #2bbef9 ;
     color: #fff;
   }
+
+  .productDetails .btn-circle{
+    min-width: 40px !important;
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50% !important;
+    /* background: #edeef5 !important; */
+    border: 1px solid rgba(0,0,0,0.1) !important;
+    color: #fff !important;
+    padding: 5px !important;
+  }
+  .productDetails .btn-circle Button svg{
+    color: #000 !important;
+    opacity: 0.8 !important;
+  }
+  .addInfo{
+    max-width: 97% !important;
+    width: 97%;
+    height: auto;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 10px;
+  }
+  .addInfo Button{
+   background: #d6d2d2;
+    /* background:#233A95; */
+    padding: 6px 25px;
+    border-radius: 30px;
+    color: #000;
+    margin-left: 30px;
+  }
+  .addInfo .active{
+    color: #fff;
+    background:#233A95;
+  }
+  .tabContent{
+    padding: 10px 25px;
+  }
+
+  .addInfo .reviews{
+    padding: 10px 25px;
+  }
+  .addInfo .reviews h3{
+  font-size: 20px;
+    font-weight: 700;
+  }
+  .reviewForm h4{
+    font-size: 20px;
+    font-weight: 700;
+  }

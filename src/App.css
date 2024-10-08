@@ -47,7 +47,7 @@ body{
   font-size: 25px;
   font-weight: 600;
 }
-.productrow .viewAllBtn{
+ .viewAllBtn{
   padding: 5px 25px;
   border: #fff;
   border: 1px solid rgba(0,0,0,0.1);
@@ -57,7 +57,7 @@ body{
   text-transform: capitalize;
 
 }
-.productrow .viewAllBtn svg{
+.viewAllBtn svg{
   font-size: 18px;
 }
 .productItem{
