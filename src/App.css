@@ -243,3 +243,123 @@ font-size: 18px;
   font-size: 14px;
   font-weight: 600;
 }
+
+.cartPage .table-responsive  .table thead{
+  background: #000 !important;
+  overflow: hidden;
+}
+.cartPage .table-responsive .table thead th{
+ border: 0px !important;
+}
+.cartPage .table thead th:first-child{
+  border-top-left-radius: 10px !important;
+  border-bottom-left-radius: 10px !important;
+}
+.cartPage .table thead th:last-child{
+  border-top-right-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
+}
+.cartItemImgWrapper{
+  width: 300px;
+}
+
+.cartItemImgWrapper .imgWrapper{
+  width: 100px;
+  overflow: hidden;
+}
+a{
+  text-decoration: none;
+}
+.cartItemImgWrapper .info a:hover{
+  text-decoration: none;
+}
+.cartItemImgWrapper .info h6{
+  color: #343434;
+  font-weight: bold;
+}
+.cartItemImgWrapper .info h6:hover{
+  color: #ed174a !important;
+}
+.remove{
+  cursor: pointer;
+}
+.remove svg{
+  font-size: 20px !important;
+}
+.remove:hover svg{
+  color: #ed174a;
+}
+.cartPage .quantityDrop Button{
+  zoom: 70%;
+}
+.cartPage table th, .cartPage table td{
+  vertical-align: middle;
+}
+.cartPage .table th, .cartPage .table td{
+  border-top: 0px !important;
+  border-bottom: 1px solid rgba(0,0,0,0.1) !important;
+}
+.cartPage table tbody tr:hover{
+  background: #fafafa !important;
+}
+.cartDetails{
+  /* border: 0px !important; */
+  border-radius: 7px !important;
+  position: sticky;
+  top: 15px;
+}
+.cartDetails h4{
+  font-size:17px !important;
+  font-weight: 800;
+  padding-bottom: 15px;
+  border-bottom: 1px solid  rgba(0,0,0,0.1);
+}
+.bg-red{
+  background: #ed174a !important;
+}
+.text-red{
+  color: #ed174a !important;
+}
+.text-blue{
+  color: #233a95 !important;
+}
+.section{
+  padding: 45px 0px;
+}
+.signInPage{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.signInPage .shape-bottom{
+  position: absolute;
+  top: auto;
+  bottom: -6px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.signInPage::after{
+ position: absolute;
+ content: "";
+ height: 100%;
+ width: 100%;
+ top: 0;
+ left: 0;
+ background-image: linear-gradient(#1e3d81,#2334a3);
+ opacity: 0.9;
+ z-index: -1;
+}
+.signInPage .box{
+  width: 400px;
+  height: 500px;
+  background: #fff;
+  margin: auto;
+  position: relative;
+  z-index: 100;
+}
+.signInPage .box h2{
+  font-size: 25px;
+  font-weight: 600;
+}
