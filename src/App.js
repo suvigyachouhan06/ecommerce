@@ -11,7 +11,7 @@ import Listing from "./pages/Listing/Listing";
 import ProductDetails from './pages/productDetails/ProductDetails';
 import Cart from "./pages/cart/Cart";
 import SignIn from "./pages/signIn/SignIn";
-
+import SignUp from "./pages/signup/SignUp"
  export const myContext= createContext()
 
 function App() {
@@ -19,6 +19,7 @@ function App() {
 
 const[isOpenProductModal,setIsOpenProductModal]=useState(false);
 const[isHeaderFooterShow,setIsHeaderFooterShow]=useState(true);
+const[isLogin,isSetLogin]=useState(false)
 
 
   useEffect(()=>{
@@ -38,7 +39,9 @@ const[isHeaderFooterShow,setIsHeaderFooterShow]=useState(true);
     isOpenProductModal,
     setIsOpenProductModal,
     isHeaderFooterShow,
-    setIsHeaderFooterShow
+    setIsHeaderFooterShow,
+    isLogin,
+    isSetLogin
   }
   return (
    <>
@@ -52,6 +55,7 @@ const[isHeaderFooterShow,setIsHeaderFooterShow]=useState(true);
     <Route path="/products/:id" exact={true} element={<ProductDetails/>}></Route>
     <Route path="/cart" exact={true} element={<Cart/>}></Route>
     <Route path="/signin" exact={true} element={<SignIn/>}></Route>
+    <Route path="/signUp" exact={true} element={<SignUp/>}></Route>
    </Routes>
  { isHeaderFooterShow===true &&   <Footer/> }
 

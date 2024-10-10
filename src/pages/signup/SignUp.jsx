@@ -29,19 +29,31 @@ const SignIn = () => {
 
             
             <form action="" className='mt-3'>
-            <h2>Sign In</h2>
-              <div className="form-group">
+            <h2>Sign Up</h2>
+
+            <div className="form-group signUpForm">
+            <div className='row'>
+                    <div className="col-md-6">
+                    <TextField id="standard-basic" type='name' label="Full Name" variant="standard" required className='w-100'/>
+                    </div>
+                    <div className="col-md-6">
+                    <TextField id="standard-basic" type='tel' label="Contact No." variant="standard" required className='w-100' inputProps={{ maxLength: 10 }} />
+                    </div>
+                </div>
+            </div>
+
+            <div className="form-group signUpForm">  
               <TextField id="standard-basic" type='email' label="E-mail" variant="standard" required className='w-100'/>
               </div>
-              <div className="form-group">
+              <div className="form-group signUpForm">
               <TextField id="standard-basic" type='password' label="Password" variant="standard" required className='w-100'/>
               </div>
 
-              <a href="" className="border-effect cursor">Forgot Password?</a>
+  
              
-              <Button className='btn-blue btn-lg btn-big w-100 mt-3'>Sign In</Button>
+              <Button className='btn-blue btn-lg btn-big w-100 mt-3'>Sign Up</Button>
 
-              <p className='mt-1'>Not Registered? <Link to="/signUp" className='border-effect ms-1 fw-bold'>Sign Up</Link></p>
+              <p className='mt-1'>Already a User? <Link to="/signin" className='border-effect ms-1 fw-bold'>Sign In</Link></p>
 
               <h6 className='mt-4 text-center fw-bold'>Or continue with social account</h6>
 

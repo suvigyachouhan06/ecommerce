@@ -43,7 +43,10 @@ const Header = () => {
                     {/* header search end here  */}
 
                     <div className="user-icon d-flex align-items-center ms-auto">
-                      <Button className='circle me-3'><FaRegUser/></Button>
+                      {
+                        context.isLogin !== true ?<Link to="/signin"><Button className='btn-blue btn-lg btn-big btn-round me-3' >SignIn</Button></Link> :<Button className='circle me-3'><FaRegUser/></Button>
+                      }
+                     
                       <div className='ms-auto cartTab d-flex align-items-center'>
                         <span className='price ms-2 me-2'>Rs 120</span>
                         <div className="position-relative ms-2">
